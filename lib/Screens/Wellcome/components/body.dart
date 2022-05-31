@@ -3,7 +3,7 @@ import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/constans.dart';
 import '../../../components/background.dart';
 import '../../Register/register_screen.dart';
-import 'rouned_button.dart';
+import '../../../components/rouned_button.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class BackgroundLoginScreen extends StatelessWidget {
+class BackgroundRegister extends StatelessWidget {
   final Widget? child;
-  const BackgroundLoginScreen({
+  const BackgroundRegister({
     Key? key,
     required this.child,
   }) : super(key: key);
@@ -13,7 +13,7 @@ class BackgroundLoginScreen extends StatelessWidget {
       constraints: const BoxConstraints.expand(),
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/images/home1.jpg"),
+          image: AssetImage("assets/images/home.jpg"),
           fit: BoxFit.cover,
         ),
       ),

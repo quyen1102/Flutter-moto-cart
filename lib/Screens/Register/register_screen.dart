@@ -6,10 +6,8 @@ class RegisterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Sign up"),
-      ),
+    return const Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Body(),
     );
   }

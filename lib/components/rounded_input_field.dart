@@ -5,7 +5,8 @@ import 'package:flutter_auth/constans.dart';
 class RoundedInputField extends StatelessWidget {
   final String? hintText;
   final IconData? icon;
-  final ValueChanged<String>? onChanged;
+  final ValueChanged<String>?
+      onChanged; // fucntion string get data when data modify
   const RoundedInputField({
     Key? key,
     this.hintText,

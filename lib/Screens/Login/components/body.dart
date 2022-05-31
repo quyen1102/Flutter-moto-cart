@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Login/components/background_login.dart';
+import 'package:flutter_auth/Screens/Register/register_screen.dart';
 import 'package:flutter_auth/components/background.dart';
+import 'package:flutter_auth/components/have_an_account_check.dart';
+import 'package:flutter_auth/components/rouned_button.dart';
 import 'package:flutter_auth/constans.dart';
 
-import 'rounded_input_field.dart';
+import '../../../components/rounded_input_field.dart';
 import 'text_field_container.dart';
 
 class Body extends StatefulWidget {
@@ -24,7 +27,7 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
+    double _fontSizeBottomText = 16;
     double _spaceItem = (size.height * 0.05);
     Color _color = kPrimaryLightColor;
     return BackgroundLoginScreen(
@@ -35,7 +38,7 @@ class _BodyState extends State<Body> {
           height: size.height * 0.7,
           decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(Radius.circular(20)),
-            color: _color.withOpacity(0.2),
+            color: _color.withOpacity(0.3),
           ),
           child: Column(
             children: <Widget>[
@@ -48,10 +51,11 @@ class _BodyState extends State<Body> {
                   color: textColorLight,
                 ),
               ),
-              SizedBox(height: size.height * 0.2),
-              const RoundedInputField(
+              SizedBox(height: size.height * 0.12),
+              RoundedInputField(
                 icon: Icons.person,
                 hintText: "Email address",
+                onChanged: (value) => {},
               ),
               TextFieldContainer(
                 child: TextField(
@@ -81,6 +85,25 @@ class _BodyState extends State<Body> {
                   ),
                 ),
               ),
+              SizedBox(height: _spaceItem),
+              RounedButton(
+                text: "Login",
+                pressed: () {},
+                color: kPrimaryColor,
+                textColor: textColorLight,
+              ),
+              SizedBox(height: size.height * 0.03),
+              AlreadyHaveAnAccount(
+                haveAnAccount: false,
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RegisterScreen(),
+                    ),
+                  );
+                },
+              )
             ],
           ),
         ),
