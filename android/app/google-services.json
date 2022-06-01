@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617161514571",
+    "project_id": "flutter-moto-cart",
+    "storage_bucket": "flutter-moto-cart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617161514571:android:b5d9da7c4ffdaab54f37ce",
+        "android_client_info": {
+          "package_name": "com.example.flutter_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617161514571-ieg944c5neejfd9n4fan5qt103gm0osl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDPeSWJzxtJuC64b9VQPzshYR93hgvZ8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617161514571-ieg944c5neejfd9n4fan5qt103gm0osl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
